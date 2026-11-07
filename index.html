@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subrat Kumar Ratha | Economics Student & Researcher</title>
+    
+    <!-- Google Search Engine & Indexing Meta Tags -->
+    <meta name="description" content="Official profile of Subrat Kumar Ratha, an Economics Honours student from Sonepur, Odisha, studying at Gangadhar Meher University.">
+    <meta name="keywords" content="Subrat Kumar Ratha, Subrat Ratha, Sonepur, Gangadhar Meher University, Economics Student, Odisha">
+    <meta name="author" content="Subrat Kumar Ratha">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://subratr965-netizen.github.io/Subrat_kumar_atha/">
+
+    <!-- Social & Open Graph Schema for Fast Indexing -->
+    <meta property="og:title" content="Subrat Kumar Ratha | Student Profile">
+    <meta property="og:description" content="Subrat Kumar Ratha - Student from Sonepur, Odisha. Economics Honours at Gangadhar Meher University.">
+    <meta property="og:image" content="134168.jpeg">
+    <meta property="og:type" content="profile">
+
+    <!-- Structured Data (Schema.org) for Instant Google Entity Recognition -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Subrat Kumar Ratha",
+      "alternateName": "Subrat Ratha",
+      "jobTitle": "Economics Student",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Sonepur",
+        "addressRegion": "Odisha",
+        "addressCountry": "India"
+      },
+      "alumniOf": [
+        {
+          "@type": "EducationalOrganization",
+          "name": "Gangadhar Meher University"
+        },
+        {
+          "@type": "EducationalOrganization",
+          "name": "SSVM Binka"
+        }
+      ],
+      "image": "134168.jpeg"
+    }
+    </script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --bg-dark: #07090e;
+            --cyber-blue: #00f0ff;
+            --cyber-purple: #8b5cf6;
+            --cyber-pink: #ec4899;
+            --neon-green: #10b981;
+            --glass-bg: rgba(13, 17, 27, 0.75);
+            --glass-border: rgba(0, 240, 255, 0.2);
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 50px 20px;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            color: var(--text-main);
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        /* Ambient Dynamic Background Flares */
+        .ambient-mesh {
+            position: fixed;
+            width: 100vw;
+            height: 100vh;
+            top: 0;
+            left: 0;
+            background: 
+                radial-gradient(circle at 15% 15%, rgba(0, 240, 255, 0.12) 0%, transparent 40%),
+                radial-gradient(circle at 85% 85%, rgba(236, 72, 153, 0.12) 0%, transparent 45%),
+                radial-gradient(circle at 50% 50%, rgba(139, 92, 246, 0.08) 0%, transparent 60%);
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        .cyber-grid {
+            position: fixed;
+            inset: 0;
+            background-image: linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+                              linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+            background-size: 40px 40px;
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        /* Glass Deck Master Container */
+        .glass-deck {
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            max-width: 950px;
+            background: var(--glass-bg);
+            backdrop-filter: blur(30px);
+            -webkit-backdrop-filter: blur(30px);
+            border: 1px solid var(--glass-border);
+            border-radius: 24px;
+            padding: 45px;
+            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6),
+                        inset 0 1px 0 rgba(255, 255, 255, 0.15),
+                        0 0 30px rgba(0, 240, 255, 0.1);
+        }
+
+        /* Top Hero Layout: Cyber Angled Image + Identity Board */
+        .hero-section {
+            display: grid;
+            grid-template-columns: 240px 1fr;
+            gap: 35px;
+            align-items: center;
+            padding-bottom: 35px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            margin-bottom: 35px;
+        }
+
+        /* Futuristic Angular Framing (Non-Round) */
+        .photo-hull {
+            position: relative;
+            width: 220px;
+            height: 275px;
+            clip-path: polygon(15% 0%, 100% 0%, 100% 85%, 85% 100%, 0% 100%, 0% 15%);
+            background: linear-gradient(135deg, var(--cyber-blue), var(--cyber-purple), var(--cyber-pink));
+            padding: 3px;
+            transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+        }
+
+        .photo-inner {
+            width: 100%;
+            height: 100%;
+            background: #0f172a;
+            clip-path: polygon(15% 0%, 100% 0%, 100% 85%, 85% 100%, 0% 100%, 0% 15%);
+            overflow: hidden;
+            position: relative;
+        }
+
+        .photo-inner img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.6s ease, filter 0.4s ease;
+        }
+
+        /* Cyber Hover Scanline & Zoom */
+        .photo-hull:hover {
+            transform: translateY(-8px) scale(1.03) rotate(-1deg);
+            box-shadow: 0 25px 50px rgba(0, 240, 255, 0.35);
+        }
+
+        .photo-hull:hover .photo-inner img {
+            transform: scale(1.1);
+            filter: contrast(1.08) brightness(1.05);
+        }
+
+        .photo-hull::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -150%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+            transform: skewX(-25deg);
+            transition: left 0.7s ease;
+        }
+
+        .photo-hull:hover::after {
+            left: 150%;
+        }
+
+        /* Personal Snapshot & Identity Content */
+        .hero-details {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        .status-pill {
+            align-self: flex-start;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 6px 16px;
+            border-radius: 999px;
+            background: rgba(16, 185, 129, 0.1);
+            border: 1px solid rgba(16, 185, 129, 0.3);
+            color: #34d399;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .status-dot {
+            width: 7px;
+            height: 7px;
+            background: var(--neon-green);
+            border-radius: 50%;
+            box-shadow: 0 0 10px var(--neon-green);
+            animation: pulse 1.8s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.4); opacity: 0.5; }
+        }
+
+        .author-name {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 38px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: -0.5px;
+            background: linear-gradient(135deg, #ffffff 40%, #00f0ff 85%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            line-height: 1.1;
+        }
+
+        .quick-specs {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 12px;
+            margin-top: 5px;
+        }
+
+        .spec-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.07);
+            border-radius: 12px;
+            padding: 10px 14px;
+            transition: border-color 0.3s;
+        }
+
+        .spec-card:hover {
+            border-color: rgba(0, 240, 255, 0.4);
+            background: rgba(0, 240, 255, 0.04);
+        }
+
+        .spec-label {
+            font-size: 11px;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .spec-value {
+            font-size: 14px;
+            font-weight: 700;
+            color: #ffffff;
+            margin-top: 3px;
+        }
+
+        /* Academic Records Structure */
+        .section-header {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 18px;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: var(--cyber-blue);
+            margin-bottom: 18px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .section-header::after {
+            content: "";
+            flex: 1;
+            height: 1px;
+            background: linear-gradient(90deg, var(--glass-border), transparent);
+        }
+
+        .table-wrap {
+            border-radius: 16px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            background: rgba(11, 15, 25, 0.6);
+        }
+
+        .academic-table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+        }
+
+        .academic-table th {
+            background: rgba(15, 23, 42, 0.9);
+            padding: 14px 18px;
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: #38bdf8;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .academic-table td {
+            padding: 14px 18px;
+            font-size: 13.5px;
+            color: #e2e8f0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+        }
+
+        .academic-table tbody tr:hover td {
+            background: rgba(0, 240, 255, 0.03);
+        }
+
+        .sr-cell {
+            font-family: 'JetBrains Mono', monospace;
+            font-weight: 700;
+            color: var(--cyber-pink);
+        }
+
+        .badge-percentage {
+            display: inline-block;
+            padding: 3px 10px;
+            background: rgba(0, 240, 255, 0.1);
+            border: 1px solid rgba(0, 240, 255, 0.3);
+            border-radius: 6px;
+            color: var(--cyber-blue);
+            font-weight: 700;
+            font-size: 12px;
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        /* College Degree Expandable Block */
+        .university-pane {
+            background: rgba(255, 255, 255, 0.02);
+            border-radius: 14px;
+            padding: 16px 20px;
+            margin-top: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.06);
+        }
+
+        .uni-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+            font-size: 13.5px;
+        }
+
+        .uni-row:last-child {
+            border-bottom: none;
+        }
+
+        .uni-label {
+            color: var(--text-muted);
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .uni-value {
+            color: #ffffff;
+            font-weight: 600;
+        }
+
+        .semester-pill-group {
+            display: flex;
+            gap: 12px;
+            margin-top: 12px;
+            flex-wrap: wrap;
+        }
+
+        .sem-pill {
+            background: rgba(139, 92, 246, 0.15);
+            border: 1px solid rgba(139, 92, 246, 0.3);
+            padding: 6px 14px;
+            border-radius: 8px;
+            font-size: 12.5px;
+            color: #ddd6fe;
+        }
+
+        .sem-pill b {
+            color: #00f0ff;
+        }
+
+        /* Mobile Optimization */
+        @media (max-width: 768px) {
+            .glass-deck {
+                padding: 24px 16px;
+            }
+            .hero-section {
+                grid-template-columns: 1fr;
+                justify-items: center;
+                text-align: center;
+                gap: 24px;
+            }
+            .photo-hull {
+                width: 190px;
+                height: 240px;
+            }
+            .author-name {
+                font-size: 28px;
+            }
+            .status-pill {
+                align-self: center;
+            }
+            .quick-specs {
+                grid-template-columns: 1fr;
+            }
+            .academic-table th, .academic-table td {
+                padding: 10px 8px;
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="ambient-mesh"></div>
+    <div class="cyber-grid"></div>
+
+    <main class="glass-deck">
+        
+        <!-- Header & Identity Section -->
+        <section class="hero-section">
+            <div class="photo-hull">
+                <div class="photo-inner">
+                    <!-- Image loading with automatic fallback handling -->
+                    <img src="passboard blazer.jpeg" 
+                         alt="Subrat Kumar Ratha - Economics Student" 
+                         onerror="this.onerror=null; this.src='134168.jpeg';">
+                </div>
+            </div>
+
+            <div class="hero-details">
+                <div class="status-pill">
+                    <span class="status-dot"></span>
+                    VERIFIED STUDENT IDENTITY
+                </div>
+
+                <h1 class="author-name">Subrat Kumar Ratha</h1>
+
+                <div class="quick-specs">
+                    <div class="spec-card">
+                        <div class="spec-label">Current Status</div>
+                        <div class="spec-value">Student (UG Economics)</div>
+                    </div>
+                    <div class="spec-card">
+                        <div class="spec-label">District / Origin</div>
+                        <div class="spec-value">Sonepur, Odisha</div>
+                    </div>
+                    <div class="spec-card">
+                        <div class="spec-label">Affiliated University</div>
+                        <div class="spec-value">Gangadhar Meher University</div>
+                    </div>
+                    <div class="spec-card">
+                        <div class="spec-label">Academic Stream</div>
+                        <div class="spec-value">B.A. Economics Honours</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Academic & Qualifications Section -->
+        <section>
+            <div class="section-header">Academic Qualifications</div>
+
+            <div class="table-wrap">
+                <table class="academic-table">
+                    <thead>
+                        <tr>
+                            <th>Sr.</th>
+                            <th>Qualification</th>
+                            <th>Institute</th>
+                            <th>District</th>
+                            <th>Year</th>
+                            <th>Result</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="sr-cell">01</td>
+                            <td>10<sup>th</sup> Board</td>
+                            <td>SSVM, BINKA</td>
+                            <td>Sonepur</td>
+                            <td>2022</td>
+                            <td><span class="badge-percentage">83%</span></td>
+                        </tr>
+                        <tr>
+                            <td class="sr-cell">02</td>
+                            <td>+2 Higher Secondary (Arts)</td>
+                            <td>Vedic International</td>
+                            <td>Sambalpur</td>
+                            <td>2024</td>
+                            <td><span class="badge-percentage">81%</span></td>
+                        </tr>
+                        <tr>
+                            <td class="sr-cell">03</td>
+                            <td>Computer Diploma (DCA)</td>
+                            <td>Nice Computer Academy</td>
+                            <td>Sonepur</td>
+                            <td>2024</td>
+                            <td><span class="badge-percentage">81%</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Current Degree Detailed Record -->
+            <div class="university-pane">
+                <div class="uni-row">
+                    <span class="uni-label">Ongoing Degree</span>
+                    <span class="uni-value">Bachelor of Arts (Economics Honours)</span>
+                </div>
+                <div class="uni-row">
+                    <span class="uni-label">University / Institution</span>
+                    <span class="uni-value">Gangadhar Meher University, Sambalpur (Govt.)</span>
+                </div>
+                <div class="uni-row">
+                    <span class="uni-label">Academic Status</span>
+                    <span class="uni-value" style="color: #34d399;">Active / Appearing (3rd Semester)</span>
+                </div>
+                <div class="uni-row" style="flex-direction: column; gap: 8px;">
+                    <span class="uni-label">Semester Performance (Year 1)</span>
+                    <div class="semester-pill-group">
+                        <div class="sem-pill">Semester 1: <b>7.35 SGPA</b></div>
+                        <div class="sem-pill">Semester 2: <b>8.09 SGPA</b></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>
