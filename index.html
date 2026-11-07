@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
     <title>Subrat Kumar Ratha | Economics Student & Researcher</title>
     
     <!-- Google Search Engine & Indexing Meta Tags -->
@@ -74,11 +74,12 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 50px 20px;
+            padding: 40px 16px;
             font-family: 'Plus Jakarta Sans', sans-serif;
             color: var(--text-main);
             position: relative;
             overflow-x: hidden;
+            width: 100%;
         }
 
         /* Ambient Dynamic Background Flares */
@@ -101,7 +102,7 @@
             inset: 0;
             background-image: linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
                               linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
-            background-size: 40px 40px;
+            background-size: 32px 32px;
             z-index: 0;
             pointer-events: none;
         }
@@ -117,7 +118,7 @@
             -webkit-backdrop-filter: blur(30px);
             border: 1px solid var(--glass-border);
             border-radius: 24px;
-            padding: 45px;
+            padding: 40px;
             box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6),
                         inset 0 1px 0 rgba(255, 255, 255, 0.15),
                         0 0 30px rgba(0, 240, 255, 0.1);
@@ -129,9 +130,9 @@
             grid-template-columns: 240px 1fr;
             gap: 35px;
             align-items: center;
-            padding-bottom: 35px;
+            padding-bottom: 30px;
             border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-            margin-bottom: 35px;
+            margin-bottom: 30px;
         }
 
         /* Futuristic Angular Framing (Non-Round) */
@@ -144,6 +145,7 @@
             padding: 3px;
             transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+            margin: 0 auto;
         }
 
         .photo-inner {
@@ -163,15 +165,14 @@
             transition: transform 0.6s ease, filter 0.4s ease;
         }
 
-        /* Cyber Hover Scanline & Zoom */
         .photo-hull:hover {
-            transform: translateY(-8px) scale(1.03) rotate(-1deg);
-            box-shadow: 0 25px 50px rgba(0, 240, 255, 0.35);
+            transform: translateY(-6px) scale(1.02);
+            box-shadow: 0 20px 45px rgba(0, 240, 255, 0.35);
         }
 
         .photo-hull:hover .photo-inner img {
-            transform: scale(1.1);
-            filter: contrast(1.08) brightness(1.05);
+            transform: scale(1.08);
+            filter: contrast(1.05) brightness(1.05);
         }
 
         .photo-hull::after {
@@ -194,7 +195,8 @@
         .hero-details {
             display: flex;
             flex-direction: column;
-            gap: 14px;
+            gap: 12px;
+            width: 100%;
         }
 
         .status-pill {
@@ -202,14 +204,14 @@
             display: inline-flex;
             align-items: center;
             gap: 8px;
-            padding: 6px 16px;
+            padding: 5px 14px;
             border-radius: 999px;
             background: rgba(16, 185, 129, 0.1);
             border: 1px solid rgba(16, 185, 129, 0.3);
             color: #34d399;
-            font-size: 12px;
+            font-size: 11px;
             font-weight: 700;
-            letter-spacing: 1.5px;
+            letter-spacing: 1.2px;
             text-transform: uppercase;
             font-family: 'JetBrains Mono', monospace;
         }
@@ -230,28 +232,30 @@
 
         .author-name {
             font-family: 'Space Grotesk', sans-serif;
-            font-size: 38px;
+            font-size: 34px;
             font-weight: 800;
             text-transform: uppercase;
             letter-spacing: -0.5px;
             background: linear-gradient(135deg, #ffffff 40%, #00f0ff 85%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            line-height: 1.1;
+            line-height: 1.15;
+            word-break: break-word;
         }
 
         .quick-specs {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-            gap: 12px;
-            margin-top: 5px;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            margin-top: 6px;
+            width: 100%;
         }
 
         .spec-card {
             background: rgba(255, 255, 255, 0.03);
             border: 1px solid rgba(255, 255, 255, 0.07);
             border-radius: 12px;
-            padding: 10px 14px;
+            padding: 10px 12px;
             transition: border-color 0.3s;
         }
 
@@ -261,7 +265,7 @@
         }
 
         .spec-label {
-            font-size: 11px;
+            font-size: 10px;
             color: var(--text-muted);
             text-transform: uppercase;
             letter-spacing: 1px;
@@ -269,20 +273,21 @@
         }
 
         .spec-value {
-            font-size: 14px;
+            font-size: 13px;
             font-weight: 700;
             color: #ffffff;
             margin-top: 3px;
+            line-height: 1.3;
         }
 
         /* Academic Records Structure */
         .section-header {
             font-family: 'Space Grotesk', sans-serif;
-            font-size: 18px;
-            letter-spacing: 1.5px;
+            font-size: 17px;
+            letter-spacing: 1.2px;
             text-transform: uppercase;
             color: var(--cyber-blue);
-            margin-bottom: 18px;
+            margin-bottom: 14px;
             display: flex;
             align-items: center;
             gap: 10px;
@@ -296,34 +301,39 @@
         }
 
         .table-wrap {
-            border-radius: 16px;
-            overflow: hidden;
+            border-radius: 14px;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
             border: 1px solid rgba(255, 255, 255, 0.08);
             background: rgba(11, 15, 25, 0.6);
+            width: 100%;
         }
 
         .academic-table {
             width: 100%;
+            min-width: 520px;
             border-collapse: collapse;
             text-align: left;
         }
 
         .academic-table th {
             background: rgba(15, 23, 42, 0.9);
-            padding: 14px 18px;
+            padding: 12px 14px;
             font-size: 11px;
             font-weight: 700;
             text-transform: uppercase;
-            letter-spacing: 1.5px;
+            letter-spacing: 1.2px;
             color: #38bdf8;
             border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            white-space: nowrap;
         }
 
         .academic-table td {
-            padding: 14px 18px;
-            font-size: 13.5px;
+            padding: 12px 14px;
+            font-size: 13px;
             color: #e2e8f0;
             border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+            white-space: nowrap;
         }
 
         .academic-table tbody tr:hover td {
@@ -338,13 +348,13 @@
 
         .badge-percentage {
             display: inline-block;
-            padding: 3px 10px;
+            padding: 3px 8px;
             background: rgba(0, 240, 255, 0.1);
             border: 1px solid rgba(0, 240, 255, 0.3);
             border-radius: 6px;
             color: var(--cyber-blue);
             font-weight: 700;
-            font-size: 12px;
+            font-size: 11.5px;
             font-family: 'JetBrains Mono', monospace;
         }
 
@@ -352,17 +362,20 @@
         .university-pane {
             background: rgba(255, 255, 255, 0.02);
             border-radius: 14px;
-            padding: 16px 20px;
+            padding: 14px 16px;
             margin-top: 15px;
             border: 1px solid rgba(255, 255, 255, 0.06);
+            width: 100%;
         }
 
         .uni-row {
             display: flex;
             justify-content: space-between;
-            padding: 8px 0;
+            align-items: flex-start;
+            padding: 9px 0;
             border-bottom: 1px solid rgba(255, 255, 255, 0.04);
-            font-size: 13.5px;
+            font-size: 13px;
+            gap: 12px;
         }
 
         .uni-row:last-child {
@@ -371,30 +384,33 @@
 
         .uni-label {
             color: var(--text-muted);
-            font-size: 12px;
+            font-size: 11px;
             text-transform: uppercase;
-            letter-spacing: 1px;
+            letter-spacing: 0.8px;
             font-family: 'JetBrains Mono', monospace;
+            flex-shrink: 0;
         }
 
         .uni-value {
             color: #ffffff;
             font-weight: 600;
+            text-align: right;
+            word-break: break-word;
         }
 
         .semester-pill-group {
             display: flex;
-            gap: 12px;
-            margin-top: 12px;
+            gap: 8px;
+            margin-top: 8px;
             flex-wrap: wrap;
         }
 
         .sem-pill {
             background: rgba(139, 92, 246, 0.15);
             border: 1px solid rgba(139, 92, 246, 0.3);
-            padding: 6px 14px;
+            padding: 5px 10px;
             border-radius: 8px;
-            font-size: 12.5px;
+            font-size: 11.5px;
             color: #ddd6fe;
         }
 
@@ -402,33 +418,72 @@
             color: #00f0ff;
         }
 
-        /* Mobile Optimization */
+        /* Mobile Viewport Optimization */
         @media (max-width: 768px) {
-            .glass-deck {
-                padding: 24px 16px;
+            body {
+                padding: 16px 10px;
             }
+
+            .glass-deck {
+                padding: 22px 14px;
+                border-radius: 18px;
+            }
+
             .hero-section {
                 grid-template-columns: 1fr;
-                justify-items: center;
+                gap: 20px;
+                padding-bottom: 22px;
+                margin-bottom: 22px;
                 text-align: center;
-                gap: 24px;
             }
+
             .photo-hull {
-                width: 190px;
-                height: 240px;
+                width: 170px;
+                height: 215px;
             }
+
             .author-name {
-                font-size: 28px;
+                font-size: 26px;
             }
+
             .status-pill {
                 align-self: center;
+                font-size: 10.5px;
+                padding: 5px 12px;
             }
+
+            .quick-specs {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 8px;
+                text-align: left;
+            }
+
+            .spec-card {
+                padding: 8px 10px;
+            }
+
+            .spec-label {
+                font-size: 9.5px;
+            }
+
+            .spec-value {
+                font-size: 12px;
+            }
+
+            .uni-row {
+                flex-direction: column;
+                gap: 3px;
+                text-align: left;
+            }
+
+            .uni-value {
+                text-align: left;
+            }
+        }
+
+        @media (max-width: 420px) {
             .quick-specs {
                 grid-template-columns: 1fr;
-            }
-            .academic-table th, .academic-table td {
-                padding: 10px 8px;
-                font-size: 12px;
             }
         }
     </style>
@@ -444,10 +499,9 @@
         <section class="hero-section">
             <div class="photo-hull">
                 <div class="photo-inner">
-                    <!-- Image loading with automatic fallback handling -->
                     <img src="passboard blazer.jpeg" 
                          alt="Subrat Kumar Ratha - Economics Student" 
-                         onerror="this.onerror=null; this.src='134168.jpeg';">
+                         onerror="this.onerror=null; this.src='./passboard blazer.jpeg';">
                 </div>
             </div>
 
